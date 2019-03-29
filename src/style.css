@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+#result{
+    display: none;/*ocultar seccion de resultados*/
+}
+#gameForm{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#gameForm div{
+    width: 32%;
+    text-align: center;
+    padding:15px;
+}
+#gameForm div img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.finalCards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.finalCards div{
+    width: 48%;
+}
+.finalCards div img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    padding: 20px 0;
+}
+.perdedor{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+#textResult{
+    position: absolute;
+    left: 50%;
+    z-index: 9;
+    font-size: 70px;
+    max-width: 300px;
+    margin: auto;
+    -webkit-transform: translate(-50%,0);
+	-moz-transform: translate(-50%,0);
+	-ms-transform: translate(-50%,0);
+	-o-transform: translate(-50%,0);
+	transform: translate(-50%,0);
+}
+.colorPerdedor{
+    color:red;
+}
+.colorGanador{
+    color:green;
+}
+.btnVolver{
+    font-size: 30px;
+    background-color: #1281e0;
+    padding: 15px;
+    color: #ffffff;
+    border-radius: 15px;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 15px;
+
+}

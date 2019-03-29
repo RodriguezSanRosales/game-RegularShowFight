@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <section class="container">
+        <section id="cntGame">
+            <form action="" id="gameForm">
+                <div>
+                    <input onclick="result()" id="option_1"  type="radio" name="options" value="1">
+                    <label for="option_1">
+                        <img src="src/images/1.jpg" alt="">
+                        <h3>Caballo de fiesta</h3>
+                    </label>
+                </div>
+                <div>
+                    <input  onclick="result()"  id="option_2"  type="radio" name="options" value="2">
+                    <label for="option_2">
+                        <img src="src/images/2.jpg" alt="">
+                        <h3>Rigby</h3>
+                    </label>
+                </div>
+                <div>
+                    <input onclick="result()" id="option_3"  type="radio" name="options" value="3">
+                    <label for="option_3">
+                        <img src="src/images/3.jpg" alt="">
+                        <h3>Dios del basquetbol</h3>
+                    </label>
+                </div>
+            </form>
+        </section>
+        <section id="result">
+            <div class="finalCards">
+                <h2 id="textResult"></h2>
+                <div>
+                    <img id="card1" src="" alt="">
+                </div>
+                <div>
+                    <img id="card2" src="" alt="">
+                </div>
+            </div>
+            <span class="btnVolver" onclick="reFresh()">Volver a jugar</span>
+        </section>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
